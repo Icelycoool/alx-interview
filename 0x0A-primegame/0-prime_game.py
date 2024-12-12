@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """Prime game"""
+
+
 def isWinner(x, nums):
     """
     Determine the winner of the prime game.
@@ -35,7 +37,8 @@ def isWinner(x, nums):
     ben_wins = 0
 
     for n in nums:
-        # If the number of primes up to n is odd, Maria wins; otherwise, Ben wins
+        # If the number of primes up to n is odd,
+        # Maria wins; otherwise, Ben wins
         if prime_count[n] % 2 == 1:
             maria_wins += 1
         else:
